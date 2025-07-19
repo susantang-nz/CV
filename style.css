@@ -23,7 +23,6 @@ body {
     /* border: .5px solid orange; */
 }
 
-
 .right-panel {
     width: 70%;
     padding: .5rem;
@@ -39,8 +38,6 @@ p {
     margin: 0;
 }
 
-
-
 .section-header {
     /* border: 1px solid orange; */
     margin: 3rem 0;
@@ -51,13 +48,11 @@ p {
     font-weight: bolder;
     /* border: .2rem solid red; */
     margin: 0 0 .5rem 0;
-
 }
 
 #name-tagline {
     margin: 0 auto .5rem 0;
     padding: 0;
-
 }
 
 .contact-info {
@@ -65,9 +60,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 1rem;
-    margin-top: 0;
-
-    
+    margin-top: 0;   
 }
 
 .section-titles {
@@ -86,7 +79,6 @@ p {
     margin: 0;
     text-align: left;
     line-height: 1.5;
-
 }
 
 .my-skills {
@@ -94,7 +86,6 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     line-height: 1.5;
 }
-
 .entry * {
     margin: 0;
 }
@@ -129,15 +120,26 @@ ul {
     padding-left: 1rem;
 }
 
+li {
+    list-style: none;
+}
+
 span {
     display: inline-block;
     font-family: "Roboto";
     font-weight: bold;
 }
 
+.section-other-education-for-print {
+    display: none;
+}
+
+.contact-info-for-print {
+    display: none;
+}
 
 /* 1024 */
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .container{
         display: flex;
         flex-direction: column;
@@ -176,7 +178,7 @@ span {
     .section-header .contact-info {
         display: flex;
         justify-content: flex-start;
-        gap:1rem;
+
     }
 
     .my-profile, .my-skills {
@@ -187,27 +189,61 @@ span {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-
-
-
 }
 
-/* @media print {
-    body {
-        background: white;
-        color: black;
-        font-size: 10pt;
+@media print {
+    .body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        /* overflow: hidden; */
     }
 
     .container {
+        width: 20cm;
         display: flex;
+        padding: .5cm;
+        margin: .5 auto;
         flex-direction: row;
-        max-width: 100%;
-        box-shadow: 0;
+        box-shadow: none;
+        /* overflow: hidden; */
+        box-sizing: border-box;
+    }
+
+    .left-panel {
+        width: 6.5cm;
+    }
+
+    .right-panel {
+        width: 12.5cm;
+    }
+
+    .section-other-education-for-print {
+        display: block;
+    }
+
+    .section-other-education {
+        display: none;
+    }
+
+    .contact-info-for-print {
+        display: block;
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    .my-profile {
+        line-height: 1.2;
+    }
+
+    .my-skills {
+        line-height: 1.2;
     }
 }
 
 @page {
     size: A4;
-    margin: .5cm;
-} */
+    margin: 0;
+}
