@@ -8,12 +8,13 @@ body {
 .container {
     width: 21cm;
     height: 29.7cm;
-    margin: 1rem auto;
+    margin: 0 auto;
     padding: 1.5rem;
     overflow: auto;
     background-color: white;
     display: flex;
     gap: .5rem;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.30);
 }
 
 .left-panel {
