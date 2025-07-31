@@ -2,7 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     background: #eee;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .container {
@@ -58,9 +58,10 @@ p {
 .contact-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     margin-bottom: 1rem;
-    margin-top: 0;   
+    margin-top: 0;
+    gap: 1rem;
 }
 
 .section-titles {
@@ -82,10 +83,11 @@ p {
 }
 
 .my-skills {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     line-height: 1.5;
 }
+
 .entry * {
     margin: 0;
 }
@@ -101,7 +103,7 @@ p {
     font-weight: bold;
 }
 
-#part-time-employers{
+#part-time-employers {
     white-space: normal;
 }
 
@@ -109,6 +111,7 @@ p {
     white-space: nowrap;
     align-self: end;
 }
+
 .section-profile {
     margin-bottom: 1rem;
 }
@@ -116,6 +119,7 @@ p {
 .my-project-container {
     margin-top: .5rem;
 }
+
 ul {
     padding-left: 1rem;
 }
@@ -140,16 +144,17 @@ span {
 
 /* 1024 */
 @media screen and (max-width: 800px) {
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
-        gap:0;
+        gap: 0;
         width: 70%;
         margin: 10px auto;
         padding: 3rem;
     }
 
-    .left-panel, .right-panel {
+    .left-panel,
+    .right-panel {
         width: 100%;
         margin: 0;
         padding: 0;
@@ -164,24 +169,27 @@ span {
     }
 
     .right-panel .section-certifications .entry {
-        margin-bottom: .5rem ;
+        margin-bottom: .5rem;
     }
 
     .section-titles {
-        padding:0;
+        padding: 0;
         margin: 2rem 0 .5rem 0 !important;
     }
+
     .section-header {
         margin: 0;
     }
 
     .section-header .contact-info {
         display: flex;
-        justify-content: flex-start;
+        gap: 1rem;
+        justify-content: center;
 
     }
 
-    .my-profile, .my-skills {
+    .my-profile,
+    .my-skills {
         line-height: normal;
     }
 

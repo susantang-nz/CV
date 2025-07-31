@@ -16,4 +16,7 @@ This is a printable, responsive online CV built with HTML and CSS. It is designe
 - CSS (Flexbox, Grid, Media Queries)
 - Google Fonts
 
-## 🧱 Project Structure
+## TO DO
+
+- how to use order to rearrange the sections
+- update my projects
